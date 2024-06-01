@@ -71,5 +71,13 @@
     <true/>
     <key>IS_SIGNIN_ENABLED</key>
     <true/>
+	<!-- App Transport Security Settings -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+    </dict>
 </dict>
 </plist>
