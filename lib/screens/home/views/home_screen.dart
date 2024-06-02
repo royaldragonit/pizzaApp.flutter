@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:first_app/screens/auth/blocs/sign_in_bloc/sign_in_bloc.dart';
 import 'package:first_app/screens/home/views/details_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -127,8 +129,8 @@ class HomeScreen extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                const SizedBox(
-                                  height: 8,
+                                SizedBox(
+                                  height: Platform.isAndroid ? 5 : (Platform.isIOS ? 8 : 5),
                                 ),
                                 Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 12.0),
